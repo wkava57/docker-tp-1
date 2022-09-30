@@ -1,11 +1,48 @@
 En examinant le contenu des fichiers et en cherchant sur le site de Symfony,
  expliquer l’utilité du dossier vendor/.
 
- -> Le dossier vendor contient les dépendances (=library) nécessaire au projet et à certaines library
+    -> Le dossier vendor contient les dépendances (library) nécessaires au projet
+    et à certaines library utilisées.
 
 En examinant le contenu des fichiers et en cherchant sur le site de Symfony,
  expliquer l’utilité du dossier public/.
 
+    -> C’est le seul dossier accessible par la requête client.
+    Il contient tous les fichiers pouvant être chargés sur le navigateur de l’utilisateur.
 
 Quel fichier dois-je modifier pour configurer les identifiants de bases de données
  afin que Symfony puisse accéder à la Base de données ?
+
+    -> Il faut modifier le fichier ".env"
+
+Comment fait-on le lien entre une route (URL) de l’application et une action d’un contrôleur ?
+
+    -> La route désigne d'abord le lieu de l'opération,
+     puis la méthode qui suit va indiquer les opérations à y effectuer.
+
+A quoi sert le fichier composer.json qui se trouve à la racine du projet ?
+
+    -> C'est le fichier qui stocke tous les paquets (dépendances) d'un projet et leurs versions,
+     mais peut aussi définir un projet quand il est publié sur Git.
+
+    ( ! Petit cours perso:
+    Différences entre les dépendances dans vendor et celles dans composer.json :
+    Composer regarde la liste des dépendances nécessaires dans composer.json (comme une liste de course),
+    puis les installes dans Vendor/.
+    Cela permet lors du git de n'envoyer que la liste légère de composer.json au lieu d'envoyer
+    un gros fichier de dépendances installées tel que Vendor (On le gitignore).
+    ! )
+
+
+Dans la classe de test HelloControllerTest expliquer ce que fait la méthode testHelloRandomRoute.
+
+    ->La méthode testHelloRandomRoute teste la route /helloRandom.
+
+    -> On créer un client dans une variable puis on envoie une requete GET qui permet de récupérer
+    le hello/random (la route).
+
+
+
+
+
+
