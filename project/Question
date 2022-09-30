@@ -1,0 +1,11 @@
+En examinant le contenu des fichiers et en cherchant sur le site de Symfony,
+ expliquer l’utilité du dossier vendor/.
+
+ -> Le dossier vendor contient les dépendances (=library) nécessaire au projet et à certaines library
+
+En examinant le contenu des fichiers et en cherchant sur le site de Symfony,
+ expliquer l’utilité du dossier public/.
+
+
+Quel fichier dois-je modifier pour configurer les identifiants de bases de données
+ afin que Symfony puisse accéder à la Base de données ?
